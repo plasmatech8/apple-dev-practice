@@ -1,14 +1,14 @@
 //
-//  SwiftfulThinkingBootcampTests.swift
-//  SwiftfulThinkingBootcampTests
+//  BootcampTests.swift
+//  BootcampTests
 //
-//  Created by Mark Connelly on 11/11/21.
+//  Created by Mark Connelly on 12/11/21.
 //
 
 import XCTest
-@testable import SwiftfulThinkingBootcamp
+@testable import Bootcamp
 
-class SwiftfulThinkingBootcampTests: XCTestCase {
+class BootcampTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,13 +1,13 @@
 //
-//  SwiftfulThinkingBootcampUITestsLaunchTests.swift
-//  SwiftfulThinkingBootcampUITests
+//  BootcampUITestsLaunchTests.swift
+//  BootcampUITests
 //
-//  Created by Mark Connelly on 11/11/21.
+//  Created by Mark Connelly on 12/11/21.
 //
 
 import XCTest
 
-class SwiftfulThinkingBootcampUITestsLaunchTests: XCTestCase {
+class BootcampUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
