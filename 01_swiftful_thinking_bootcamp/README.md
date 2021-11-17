@@ -90,3 +90,38 @@ RoundedRectangle(cornerRadius: 20)
     .foregroundColor(Color.blue)
     .frame(width: 200, height: 100)
 ```
+
+## 04. Colors
+
+Getting colors:
+```swift
+// Basic Colors
+Color(.red)
+Colors.red
+Color(#colorLiteral(red: 0, green: 0.3, blue: 0.6, alpha: 1))
+
+// Primary/Secondary Colors
+Color.primary
+Color.secondary
+
+// UIKit & System Colors
+Color(UIColor.brown)
+Color(UIColor.secondarySystemBackground)
+
+// Custom Colors
+Color("CustomColor")
+```
+
+If you change the device color scheme, the system/primary colors will adapt. 
+(click on the slider settings button in the preview emulator)
+
+We can create custom colors by clicking on Assets and creating a new color set.
+On the colors we can specify a light/dark mode colors and open the sidebar 
+(top right) to change the color values.
+
+```swift
+RoundedRectangle(cornerRadius: 20)
+    .fill(Color("CustomColor"))
+    .frame(width: 200, height: 150)
+    .shadow(color: .black, radius: 10, x: 10, y: 10)
+```

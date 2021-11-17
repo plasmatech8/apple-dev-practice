@@ -18,6 +18,7 @@
 		1F6F0847273E211B00B05986 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F6F0846273E211B00B05986 /* README.md */; };
 		1F6F0849273E246B00B05986 /* TextBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F0848273E246B00B05986 /* TextBootcamp.swift */; };
 		1F6F084B27421B8700B05986 /* ShapesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F084A27421B8700B05986 /* ShapesBootcamp.swift */; };
+		1F6F084D2744C0E600B05986 /* ColorsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F084C2744C0E600B05986 /* ColorsBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		1F6F0846273E211B00B05986 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1F6F0848273E246B00B05986 /* TextBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBootcamp.swift; sourceTree = "<group>"; };
 		1F6F084A27421B8700B05986 /* ShapesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesBootcamp.swift; sourceTree = "<group>"; };
+		1F6F084C2744C0E600B05986 /* ColorsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				1F6F081A273E208C00B05986 /* BootcampApp.swift */,
 				1F6F0848273E246B00B05986 /* TextBootcamp.swift */,
 				1F6F084A27421B8700B05986 /* ShapesBootcamp.swift */,
+				1F6F084C2744C0E600B05986 /* ColorsBootcamp.swift */,
 				1F6F081C273E208C00B05986 /* ContentView.swift */,
 				1F6F081E273E208E00B05986 /* Assets.xcassets */,
 				1F6F0820273E208E00B05986 /* Preview Content */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6F084D2744C0E600B05986 /* ColorsBootcamp.swift in Sources */,
 				1F6F084B27421B8700B05986 /* ShapesBootcamp.swift in Sources */,
 				1F6F081D273E208C00B05986 /* ContentView.swift in Sources */,
 				1F6F0849273E246B00B05986 /* TextBootcamp.swift in Sources */,
