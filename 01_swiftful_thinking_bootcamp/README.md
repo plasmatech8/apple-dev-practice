@@ -112,11 +112,11 @@ Color(UIColor.secondarySystemBackground)
 Color("CustomColor")
 ```
 
-If you change the device color scheme, the system/primary colors will adapt. 
+If you change the device color scheme, the system/primary colors will adapt.
 (click on the slider settings button in the preview emulator)
 
 We can create custom colors by clicking on Assets and creating a new color set.
-On the colors we can specify a light/dark mode colors and open the sidebar 
+On the colors we can specify a light/dark mode colors and open the sidebar
 (top right) to change the color values.
 
 ```swift
@@ -124,4 +124,54 @@ RoundedRectangle(cornerRadius: 20)
     .fill(Color("CustomColor"))
     .frame(width: 200, height: 150)
     .shadow(color: .black, radius: 10, x: 10, y: 10)
+```
+
+## 05. Gradients
+
+Gradients are a good way to make cards look fancy.
+
+They can also be used to create backgrounds that look nice without needing a giant PNG image.
+
+```swift
+RoundedRectangle(cornerRadius: 25)
+    .fill(
+        LinearGradient(
+            gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)), Color.blue]),
+            startPoint: .topLeading, endPoint: .bottom)
+    )
+    .frame(width: 300, height: 200)
+```
+```swift
+RoundedRectangle(cornerRadius: 25)
+    .fill(
+        RadialGradient(
+            gradient: Gradient(colors: [Color.red, Color.blue]),
+            center: .center,
+            startRadius: 5,
+            endRadius: 200
+        )
+    )
+    .frame(width: 300, height: 200)
+```
+```swift
+RoundedRectangle(cornerRadius: 25)
+    .fill(
+        RadialGradient(
+            gradient: Gradient(colors: [Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)), Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1))]),
+            center: .topLeading,
+            startRadius: 5,
+            endRadius: 400
+        )
+    )
+    .frame(width: 300, height: 200)
+```
+```swift
+RoundedRectangle(cornerRadius: 25)
+    .fill(
+        AngularGradient(
+            gradient:  Gradient(colors: [Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)), Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1))]),
+            center: .topLeading,
+            angle: .degrees(180 + 45))
+    )
+    .frame(width: 300, height: 200)
 ```
