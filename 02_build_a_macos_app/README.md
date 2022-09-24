@@ -119,3 +119,53 @@ struct ListView: View {
 }
 ```
 ![](images/2022-09-24-23-08-55.png)
+
+## 04. Main View
+
+We need to add some image assets into our XCode project.
+
+Open `Assets.xcassets`. Click and drag your images over.
+
+The filename (minus the file 1extension) will be used to reference the image.
+
+Now we will create a `MainView`.
+
+```swift
+struct MainView: View {
+    let cols: [GridItem] = [
+        .init(.flexible()),
+        .init(.flexible()),
+        .init(.flexible())
+    ]
+    let images = [
+        "frog",
+        "rough_day_huh",
+        "pepe",
+        "turtle_guy",
+        "polite_cat",
+        "mlg_frog"
+    ]
+    var body: some View {
+        VStack {
+            // Header
+            Image("header")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            // Content
+            LazyVGrid(columns: cols) {
+                ForEach(images, id: \.self) { imageName in
+                    VStack {
+                        Image(imageName).resizable().aspectRatio(contentMode: .fit)
+                        Text("A meme")
+                    }
+                }
+            }
+            Spacer()
+        }
+    }
+}
+```
+
+![](images/2022-09-25-00-00-54.png)
+
+The responsiveness of the main view is currently a bit scuffed.
